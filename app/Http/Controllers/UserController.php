@@ -11,5 +11,5 @@ class UserController extends Controller
     {
         $users = DB::table('users')->get();
         return view('welcome',compact('users'));
-    } 
+    }
 }

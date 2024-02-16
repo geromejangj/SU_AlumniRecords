@@ -6,8 +6,8 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
 
     <link href="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 
 
@@ -22,7 +22,7 @@
     <th>Verified</th>
   </tr>
   </thead>
-  
+
   <tbody>
   @foreach ($users as $user)
   <tr>
@@ -31,7 +31,7 @@
     <td>{{$user->email}}</td>
     <td>{{$user->email_verified_at}}</td>
   </tr>
-      
+
   @endforeach
   </tbody>
 </table>
